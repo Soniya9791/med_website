@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Terms: React.FC = () => {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
   return (
     <div className="bg-[#fff7f3] text-[#0F3B36] min-h-screen py-12 px-6 md:px-12">
       <div id="home" className="max-w-4xl mx-auto p-6 md:p-12">

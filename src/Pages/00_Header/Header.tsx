@@ -1,4 +1,3 @@
-
 import { FaCalendarAlt } from "react-icons/fa";
 import logo from "../../assets/images/logo.svg";
 import { useState } from "react";
@@ -13,6 +12,8 @@ export default function Header() {
     { name: "Services", id: "/#services" },
     { name: "Pages", id: "/#pages" },
     { name: "Contact Us", id: "/#contact" },
+    { name: "Terms & Condition", id: "/#terms" },
+    { name: "Privacy Policy", id: "/#privacy" },
   ];
 
   return (
@@ -43,14 +44,16 @@ export default function Header() {
         </nav>
 
         {/* Book Appointment Button */}
-        <div className="hidden md:flex justify-end">
+        {/* <div className="hidden md:flex justify-end">
           <button className="flex items-center space-x-2 border-2 border-[#F7A582] text-[#F7A582] px-3 md:px-5 lg:px-6 py-2 rounded-full w-auto max-w-[200px] transition hover:bg-[#F7A582] hover:text-white">
             <span className="leading-tight text-xs md:text-sm lg:text-base">
-              Book<br />Appointment
+              Book
+              <br />
+              Appointment
             </span>
             <FaCalendarAlt />
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
         <button
@@ -59,7 +62,6 @@ export default function Header() {
         >
           ☰
         </button>
-       
 
         {/* Mobile Menu */}
         {isToggleOpen && (
@@ -87,8 +89,5 @@ export default function Header() {
         )}
       </div>
     </header>
-
-  
-  
   );
 }
