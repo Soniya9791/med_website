@@ -9,11 +9,11 @@ import {
 import {
   FaMapMarkerAlt,
   FaEnvelope,
-  FaPhoneAlt,
+  // FaPhoneAlt,
   FaClock,
 } from "react-icons/fa"; // React Icons for Contact
-import { GrLinkNext } from "react-icons/gr";
-import { Link } from "react-router-dom";
+// import { GrLinkNext } from "react-icons/gr";
+// import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-[#0F3B36] text-[#FFA377] py-10 px-6 md:px-20">

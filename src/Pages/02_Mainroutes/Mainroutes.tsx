@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../00_Header/Header";
 import Footer from "../01_Footer/Footer";
 import Home from "../../Components/00_Home/Home";
-import Terms from "../03_Terms/Terms";
-import Privacy from "../04_Privacy/Privacy";
+// import Terms from "../03_Terms/Terms";
+// import Privacy from "../04_Privacy/Privacy";
 
 function App() {
   return (
