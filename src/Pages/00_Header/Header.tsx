@@ -69,7 +69,7 @@ export default function Header() {
             {menuItems.map((item) => (
               <a
                 key={item.name}
-                href={`#${item.id}`} // Update href to point to section IDs
+                href={`${item.id}`} // Update href to point to section IDs
                 className={`transition ${
                   active === item.name ? "text-[#F7A582]" : "text-white"
                 } hover:text-[#F7A582]`}
@@ -81,10 +81,10 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
-            <button className="flex items-center space-x-2 border-2 border-[#F7A582] text-[#F7A582] px-4 py-2 rounded-full w-auto max-w-[200px] transition hover:bg-[#F7A582] hover:text-white">
+            {/* <button className="flex items-center space-x-2 border-2 border-[#F7A582] text-[#F7A582] px-4 py-2 rounded-full w-auto max-w-[200px] transition hover:bg-[#F7A582] hover:text-white">
               <span>Book Appointment</span>
               <FaCalendarAlt />
-            </button>
+            </button> */}
           </div>
         )}
       </div>

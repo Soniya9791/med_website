@@ -109,7 +109,7 @@ export default function Footer() {
 
       {/* Copyright Section */}
       <p className="text-center text-white">
-        Copyright 2024 © <span className="text-[#FFA377]">MediPro</span> All
+        Copyright 2025 © <span className="text-[#FFA377]">Medpredit</span> All
         Rights Reserved.
       </p>
     </footer>
