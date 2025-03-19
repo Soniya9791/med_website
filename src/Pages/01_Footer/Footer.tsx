@@ -1,8 +1,9 @@
-import React from "react";
+
 import logo from "../../assets/images/logo.svg";
 import { FaLinkedin, FaYoutube, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaClock } from "react-icons/fa"; // React Icons for Contact
-
+import { GrLinkNext } from "react-icons/gr";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-[#0F3B36] text-[#FFA377] py-10 px-6 md:px-20">
@@ -27,15 +28,22 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold">Quick Links</h3>
-          <ul className="text-white mt-8 space-y-2">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Doctors</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
+  <h3 className="text-xl font-semibold">Quick Links</h3>
+  <ul className="text-white mt-8 space-y-2">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Doctors</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li className="flex items-center gap-2">
+      <Link to="/terms" className="flex items-center gap-1 text-[#F4A38A]">
+        Terms and Conditions <GrLinkNext />
+      </Link>
+    </li>
+  </ul>
+</div>
+
+
 
         {/* Contact Details - Using React Icons */}
         <div>
