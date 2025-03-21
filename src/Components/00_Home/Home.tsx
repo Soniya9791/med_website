@@ -8,7 +8,7 @@ import dr4 from "../../assets/images/dr4.png";
 import dr5 from "../../assets/images/dr5.png";
 import { FaCirclePlay } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
-import { FaRegCalendarAlt } from "react-icons/fa";
+
 import img1 from "../../assets/images/img1.svg";
 import { FcApproval } from "react-icons/fc";
 import { FaArrowRight } from "react-icons/fa6";
