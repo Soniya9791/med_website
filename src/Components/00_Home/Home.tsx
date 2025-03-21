@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import dr1 from "../../assets/images/dr1.png";
 import dr2 from "../../assets/images/dr2.png";
 import dot from "../../assets/images/dot.png";
-
+import { FaHandHoldingMedical } from "react-icons/fa";
 import dr3 from "../../assets/images/dr3.png";
 import dr4 from "../../assets/images/dr4.png";
 import dr5 from "../../assets/images/dr5.png";
@@ -20,7 +20,7 @@ import icon5 from "../../assets/images/icon5.svg";
 import suitcase from "../../assets/images/case.svg";
 import self from "../../assets/images/self.svg";
 import score from "../../assets/images/score.svg";
-
+import profile from "../../assets/images/profile.svg"
 import take from "../../assets/images/take.svg";
 import past from "../../assets/images/past.svg";
 import grpdr from "../../assets/images/grpdr.png";
@@ -45,28 +45,28 @@ const Home: React.FC = () => {
     {
       name: "Nirmal",
       role: "Patient",
-      image: dr1,
+      image: profile,
       feedback:
         "MedPredit helped me understand my health risks and make better lifestyle choices. It’s an easy-to-use tool that gives valuable insights.",
     },
     {
       name: "Riya",
       role: "Patient",
-      image: dr2,
+      image: profile,
       feedback:
         "Tracking my family’s health in one place has never been easier! I love how MedPredit provides personalized recommendations.",
     },
     {
       name: "Arjun",
       role: "Patient",
-      image: dr3,
+      image: profile,
       feedback:
         "MedPredit gave me a clear picture of my health and what I need to improve. The insights are truly life-changing!",
     },
     {
       name: "Karan",
       role: "Patient",
-      image: dr3,
+      image: profile,
       feedback:
         "With MedPredit, I can monitor my health trends effortlessly. It’s a must-have for anyone serious about their well-being!",
     },
@@ -236,7 +236,7 @@ const Home: React.FC = () => {
             className="w-full lg:w-1/2 text-center lg:text-left"
           >
             <p className="text-sm text-white tracking-widest uppercase">
-              Your Personal Health Tracker
+            Your Personal Health Tracker 
             </p>
             <h1 className="text-3xl md:text-4xl font-bold text-[#f89c7c] mt-2">
               Seamless, secure, and smart your health companion anytime!
@@ -305,7 +305,7 @@ const Home: React.FC = () => {
               Contact Us
             </h3>
             <button className="flex flex-row justify-center mt-5 md:mt-10 items-center bg-black p-3 text-sm">
-              Make Appointment <FaRegCalendarAlt className="ml-2" />
+            Get in Touch <FaHandHoldingMedical  className="ml-2 text-xl w-10" />
             </button>
           </motion.div>
 
@@ -452,9 +452,9 @@ const Home: React.FC = () => {
             </ul>
 
             {/* Read More Button */}
-            <button className="mt-6 rounded-4xl border-2 border-[#f89c7c] text-[#f89c7c] px-6 py-2 shadow-lg active:bg-[#07332f] hover:bg-[#07332f] transition">
+            {/* <button className="mt-6 rounded-4xl border-2 border-[#f89c7c] text-[#f89c7c] px-6 py-2 shadow-lg active:bg-[#07332f] hover:bg-[#07332f] transition">
               Read More
-            </button>
+            </button> */}
           </motion.div>
         </div>
 
@@ -469,7 +469,7 @@ const Home: React.FC = () => {
               className="text-center mt-10"
             >
               <h3 className="text-[#D8927A] uppercase tracking-widest">
-                Medical Services
+              Our Services
               </h3>
               <h2 className="text-4xl font-bold text-[#07332F]">
                 Simplify health tracking for your entire family with MedPredit!
@@ -743,7 +743,7 @@ const Home: React.FC = () => {
             Testimonial
           </p>
           <h2 className="text-4xl font-bold text-white mt-2">
-            What Patients Say About Us
+          What Users Say  
           </h2>
 
           <div
@@ -788,7 +788,7 @@ const Home: React.FC = () => {
       <section id="pages" className="bg-[#fef6f2] mt-40 py-10 px-6">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-[#f7a582] text-lg font-extralight uppercase">
-            Our Blog
+             Blogs
           </h3>
           <h2 className="text-3xl font-bold text-[#07332f] mt-2">
             Latest News & Articles.
